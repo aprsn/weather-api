@@ -27,7 +27,9 @@ namespace WeatherAPI.Controllers
             {
                 Name = result.location.name,
                 Temperature = result.current.temperature,
-                Localtime = result.location.localtime
+                Localtime = result.location.localtime,
+                FeelsLike = result.current.feelslike,
+                RuzgarYonu = result.current.wind_dir
             };
 
 
